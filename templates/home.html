@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css" </head>
+
+    <body style="background-color:#2b2036;">
+        <header>
+            <div class="container">
+                <div id="brandname">
+				      
+                    
+                </div>
+                <h2>Banglish/Romanic Bangla Spell Checker </h2>
+            </div>
+        </header>
+
+        <div class="ml-container">
+            <form action="{{url_for('predict')}}" method='POST'>
+                <h2 style="background-color:#ff9900;">Niche Banglish/Romanic Banglay likhen : </h2>
+                <textarea name="comment" rows="10" cols="100"></textarea>
+                <br/>
+                <input type='submit' class="btn-info" value="predict">
+            </form>
+        </div>
+
+
+    </body>
+
+</html>
