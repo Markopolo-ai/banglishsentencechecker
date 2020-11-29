@@ -51,7 +51,7 @@ def predict():
             data = comment #[comment]
 
             def getMatch(string1,string2):
-                min_sim = .90
+                min_sim = .70
                 output = []
                 res = [[lev.jaro_winkler(x,y) for x in string1.split()] for y in string2.split()]
 
